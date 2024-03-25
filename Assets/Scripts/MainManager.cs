@@ -79,6 +79,7 @@ public class MainManager : MonoBehaviour
         if (m_Points > ScoreManager.Instance.BestScore)
         {
             ScoreManager.Instance.BestScore = m_Points;
+            ScoreManager.Instance.SaveBestScore();
         }
     }
 }
